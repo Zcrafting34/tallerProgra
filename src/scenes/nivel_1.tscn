@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cygh37u7l26kf"]
+
+[ext_resource type="PackedScene" uid="uid://rau2xsf1hoif" path="res://src/scenes/Player.tscn" id="1_qwgt4"]
+[ext_resource type="Texture2D" uid="uid://b7juqpxctrj5f" path="res://src/assets/Pixel Adventure 1/Free/Background/Brown.png" id="1_vucx5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qwgt4"]
+size = Vector2(1169, 59)
+
+[node name="Nivel1" type="Node2D"]
+
+[node name="Brown" type="Sprite2D" parent="."]
+position = Vector2(575.5, 328)
+scale = Vector2(17.953125, 10.1875)
+texture = ExtResource("1_vucx5")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_qwgt4")]
+position = Vector2(425, 105)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(569, 622.5)
+shape = SubResource("RectangleShape2D_qwgt4")

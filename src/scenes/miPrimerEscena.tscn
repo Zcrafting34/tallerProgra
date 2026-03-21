@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqln6gt3a333v"]
+
+[ext_resource type="Script" uid="uid://bs8wswy765hbt" path="res://src/scripts/CharacterBody2d.cs" id="1_fhycf"]
+[ext_resource type="Texture2D" uid="uid://clj27pru4l8p8" path="res://icon.svg" id="2_qdkbc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7f0qa"]
+size = Vector2(117, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pwo84"]
+size = Vector2(1148, 64)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(578, 289)
+script = ExtResource("1_fhycf")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_qdkbc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_7f0qa")
+debug_color = Color(0.14996156, 0.5998642, 0.66235715, 0.41960785)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(575, 612)
+shape = SubResource("RectangleShape2D_pwo84")
