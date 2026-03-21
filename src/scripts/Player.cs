@@ -1,5 +1,5 @@
 using Godot;
-using System;
+
 
 public partial class Player : CharacterBody2D
 {
@@ -8,6 +8,9 @@ public partial class Player : CharacterBody2D
 
     public AnimatedSprite2D animaciones;
 
+    enum State {Idle, Walk, Jump, Fall}
+
+    private State currentState = State.Idle;
     public override void _Ready()
     {
         animaciones = GetNode<AnimatedSprite2D>("animaciones");
@@ -17,43 +20,53 @@ public partial class Player : CharacterBody2D
     {
         Vector2 velocity = Velocity;
 
-        // Add the gravity.
         if (!IsOnFloor())
-        {
             velocity += GetGravity() * (float)delta;
-            animaciones.Play("fall");
-        }
-
-        // Handle Jump.
+        
         if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
-        {
             velocity.Y = JumpVelocity;
-            animaciones.Play("jump");
-        }
+ 
 
-        // Get the input direction and handle the movement/deceleration.
-        // As good practice, you should replace UI actions with custom gameplay actions.
         float direction = Input.GetAxis("izq", "der");
         if (direction != 0)
-        {
-            if (direction < 0)
-            {
-                animaciones.FlipH = true;
-            }
-            else if (direction > 0)
-            {
-                animaciones.FlipH = false;
-            }
-            animaciones.Play("run");
             velocity.X = direction * Speed;
+        else
+            velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+        
+        Velocity = velocity;
+        MoveAndSlide();
+
+        UpdateState(direction);
+        PlayAnimation();
+    }
+
+    private void UpdateState(float dir)
+    {
+        if (!IsOnFloor())
+        {
+            currentState = (Velocity.Y < 0) ? State.Jump : State.Fall;
+            if (dir != 0 && currentState == State.Jump)
+            {
+                animaciones.FlipH = dir > 0;
+            }
         }
         else
         {
-            animaciones.Play("idle");
-            velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+            currentState = (dir != 0) ? State.Walk : State.Idle;
+            if (dir != 0)
+            {
+                animaciones.FlipH = dir < 0;
+            }
         }
+    }
+    private void PlayAnimation()
+    {
+        string name = currentState.ToString().ToLower();
 
-        Velocity = velocity;
-        MoveAndSlide();
+        animaciones.Play(name);
+
     }
 }
+
+
+

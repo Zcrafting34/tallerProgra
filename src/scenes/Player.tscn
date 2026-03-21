@@ -236,7 +236,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_jrslf")
 }],
 "loop": true,
-"name": &"run",
+"name": &"walk",
 "speed": 24.0
 }]
 
@@ -249,9 +249,11 @@ shape = SubResource("RectangleShape2D_8qsgd")
 
 [node name="animaciones" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1blyi")
-animation = &"run"
-frame_progress = 0.063011274
+animation = &"walk"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, 0)
 zoom = Vector2(2.16, 2.16)
+limit_left = 0
+limit_bottom = 640
 position_smoothing_enabled = true
