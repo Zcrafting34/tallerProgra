@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://rau2xsf1hoif"]
+[gd_scene load_steps=38 format=3 uid="uid://rau2xsf1hoif"]
 
 [ext_resource type="Script" uid="uid://dxbquxspw0v5h" path="res://src/scripts/Player.cs" id="1_1g466"]
 [ext_resource type="Texture2D" uid="uid://2ksnbeyj7gvq" path="res://src/assets/Pixel Adventure 1/Free/Main Characters/Ninja Frog/Fall (32x32).png" id="1_gjb54"]
@@ -240,7 +240,10 @@ animations = [{
 "speed": 24.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[sub_resource type="LabelSettings" id="LabelSettings_1g466"]
+font_size = 46
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_1g466")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -257,3 +260,11 @@ zoom = Vector2(2.16, 2.16)
 limit_left = 0
 limit_bottom = 640
 position_smoothing_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Puntos: 0"
+label_settings = SubResource("LabelSettings_1g466")
