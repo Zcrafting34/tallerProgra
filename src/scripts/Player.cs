@@ -6,14 +6,16 @@ public partial class Player : CharacterBody2D
 
     [Signal]
     public delegate void SaludarEventHandler(string msg);
-    public int Puntos{get; set;}
+    public int Puntos { get; set; }
 
     public const float Speed = 300.0f;
     public const float JumpVelocity = -400.0f;
 
     public AnimatedSprite2D animaciones;
 
-    enum State {Idle, Walk, Jump, Fall}
+    private int health = 10;
+
+    enum State { Idle, Walk, Jump, Fall }
 
     private State currentState = State.Idle;
 
@@ -33,17 +35,17 @@ public partial class Player : CharacterBody2D
 
         if (!IsOnFloor())
             velocity += GetGravity() * (float)delta;
-        
+
         if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
             velocity.Y = JumpVelocity;
- 
+
 
         float direction = Input.GetAxis("izq", "der");
         if (direction != 0)
             velocity.X = direction * Speed;
         else
             velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
-        
+
         Velocity = velocity;
         MoveAndSlide();
 
@@ -56,10 +58,10 @@ public partial class Player : CharacterBody2D
         if (!IsOnFloor())
         {
             currentState = (Velocity.Y < 0) ? State.Jump : State.Fall;
-          
-            
+
+
             animaciones.FlipH = dir > 0;
-            
+
         }
         else
         {
@@ -73,7 +75,7 @@ public partial class Player : CharacterBody2D
     private void PlayAnimation()
     {
         string name = currentState.ToString().ToLower();
- 
+
         animaciones.Play(name);
 
     }
@@ -89,7 +91,15 @@ public partial class Player : CharacterBody2D
         GD.Print("Hola: " + m);
     }
 
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0) Die();
+    }
+
+    private void Die()
+    {
+        QueueFree();
+    }
+
 }
-
-
-

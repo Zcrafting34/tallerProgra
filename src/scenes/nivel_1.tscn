@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=4 uid="uid://cygh37u7l26kf"]
+[gd_scene load_steps=9 format=4 uid="uid://cygh37u7l26kf"]
 
 [ext_resource type="PackedScene" uid="uid://rau2xsf1hoif" path="res://src/scenes/Player.tscn" id="1_qwgt4"]
 [ext_resource type="Texture2D" uid="uid://b7juqpxctrj5f" path="res://src/assets/Pixel Adventure 1/Free/Background/Brown.png" id="1_vucx5"]
 [ext_resource type="Texture2D" uid="uid://bdb78mfpie88q" path="res://src/assets/Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="3_ve3y6"]
 [ext_resource type="Texture2D" uid="uid://b5dqd0j8n8mgs" path="res://src/assets/Pixel Adventure 1/Free/Items/Boxes/Box1/Idle.png" id="4_d4klf"]
-[ext_resource type="PackedScene" uid="uid://2qadqsxhgkk5" path="res://src/scenes/Manzana.tscn" id="5_pefto"]
+[ext_resource type="PackedScene" path="res://src/scenes/Manzana.tscn" id="5_pefto"]
+[ext_resource type="PackedScene" uid="uid://bxf5om7vl6cd8" path="res://src/scenes/Enemy.tscn" id="6_fu6nf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ve3y6"]
 texture = ExtResource("3_ve3y6")
@@ -206,3 +207,7 @@ position = Vector2(230, 522)
 
 [node name="Area2D3" parent="." instance=ExtResource("5_pefto")]
 position = Vector2(489, 556)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("6_fu6nf")]
+position = Vector2(377, 560)
+motion_mode = 0
