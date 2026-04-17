@@ -1,4 +1,5 @@
 using Godot;
+using Microsoft.VisualBasic.FileIO;
 using System;
 
 public partial class Enemy : CharacterBody2D
@@ -11,6 +12,7 @@ public partial class Enemy : CharacterBody2D
     private Area2D vision;
     private Timer cd;
 
+
     private Timer c_direct;
 
     private Player player = null;
@@ -19,7 +21,9 @@ public partial class Enemy : CharacterBody2D
 
 
     public override void _Ready()
+
     {
+
         vision = GetNode<Area2D>("vision");
         cd = GetNode<Timer>("Timer");
         c_direct = GetNode<Timer>("timerCaminar");

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bickd4olrkkmt"
+path="res://.godot/imported/textscroll_1.mp3-e32766f474dd1766a7e9ec282cd4ee4a.mp3str"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/textscroll_1.mp3"
+dest_files=["res://.godot/imported/textscroll_1.mp3-e32766f474dd1766a7e9ec282cd4ee4a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

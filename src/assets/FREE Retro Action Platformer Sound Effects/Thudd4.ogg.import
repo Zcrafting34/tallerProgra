@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdslfa8oqpntj"
+path="res://.godot/imported/Thudd4.ogg-96dd37ccef5cff5fea32f1f0b5ef43f7.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Thudd4.ogg"
+dest_files=["res://.godot/imported/Thudd4.ogg-96dd37ccef5cff5fea32f1f0b5ef43f7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

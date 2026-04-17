@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://vwpncim8ch05"
+path="res://.godot/imported/RegularShowShort.ogg-f1e1b8e8c37de64c7399066fe53016d7.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/RegularShowShort.ogg"
+dest_files=["res://.godot/imported/RegularShowShort.ogg-f1e1b8e8c37de64c7399066fe53016d7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

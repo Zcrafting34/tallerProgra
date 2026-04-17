@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5cjh4vv1eccs"
+path="res://.godot/imported/Scratch2.ogg-6307a265633b943b687711b7104fca43.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Scratch2.ogg"
+dest_files=["res://.godot/imported/Scratch2.ogg-6307a265633b943b687711b7104fca43.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://uldfdxxkdslh"
+path="res://.godot/imported/Eatingspooky.ogg-1c99937b9c919a031e4ac9d25e2e13ff.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Eatingspooky.ogg"
+dest_files=["res://.godot/imported/Eatingspooky.ogg-1c99937b9c919a031e4ac9d25e2e13ff.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

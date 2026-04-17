@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxsajb4116ruy"
+path="res://.godot/imported/sucess1.mp3-2c8651366bf96e3630061d467fd36c59.mp3str"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/sucess1.mp3"
+dest_files=["res://.godot/imported/sucess1.mp3-2c8651366bf96e3630061d467fd36c59.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

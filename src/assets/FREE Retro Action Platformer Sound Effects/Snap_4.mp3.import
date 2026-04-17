@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dh5t4udlcnd1k"
+path="res://.godot/imported/Snap_4.mp3-6c570f74f2aa51e8b78bc41bd6156699.mp3str"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Snap_4.mp3"
+dest_files=["res://.godot/imported/Snap_4.mp3-6c570f74f2aa51e8b78bc41bd6156699.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

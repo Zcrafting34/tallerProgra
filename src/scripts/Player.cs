@@ -39,7 +39,6 @@ public partial class Player : CharacterBody2D
         if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
             velocity.Y = JumpVelocity;
 
-
         float direction = Input.GetAxis("izq", "der");
         if (direction != 0)
             velocity.X = direction * Speed;
@@ -58,18 +57,14 @@ public partial class Player : CharacterBody2D
         if (!IsOnFloor())
         {
             currentState = (Velocity.Y < 0) ? State.Jump : State.Fall;
-
-
-            animaciones.FlipH = dir > 0;
-
+            if (currentState == State.Jump) animaciones.FlipH = dir > 0;
+            else if (currentState == State.Fall) animaciones.FlipH = dir < 0;
         }
         else
         {
             currentState = (dir != 0) ? State.Walk : State.Idle;
             if (dir != 0)
-            {
                 animaciones.FlipH = dir < 0;
-            }
         }
     }
     private void PlayAnimation()
@@ -77,7 +72,6 @@ public partial class Player : CharacterBody2D
         string name = currentState.ToString().ToLower();
 
         animaciones.Play(name);
-
     }
 
     public void ActualizarPuntos(int punto)

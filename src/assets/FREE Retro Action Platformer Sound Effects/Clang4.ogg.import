@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://sjq7k138or22"
+path="res://.godot/imported/Clang4.ogg-a33980f4f77936cfb02231851278b984.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Clang4.ogg"
+dest_files=["res://.godot/imported/Clang4.ogg-a33980f4f77936cfb02231851278b984.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://t67877h8oah2"
+path="res://.godot/imported/Thud2.ogg-2d1a82c91fa2de62c959151b1d47b92f.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Thud2.ogg"
+dest_files=["res://.godot/imported/Thud2.ogg-2d1a82c91fa2de62c959151b1d47b92f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

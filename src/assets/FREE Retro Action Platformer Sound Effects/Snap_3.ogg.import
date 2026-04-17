@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdy3etum33f7x"
+path="res://.godot/imported/Snap_3.ogg-0fab6dc7325f0d957214885b6102cdff.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Snap_3.ogg"
+dest_files=["res://.godot/imported/Snap_3.ogg-0fab6dc7325f0d957214885b6102cdff.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

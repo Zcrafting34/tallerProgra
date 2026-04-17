@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8ftpb4s5lfui"
+path="res://.godot/imported/textscroll_3.ogg-0e5699bdf3bf1ad041e472a8251b760a.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/textscroll_3.ogg"
+dest_files=["res://.godot/imported/textscroll_3.ogg-0e5699bdf3bf1ad041e472a8251b760a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxtsqeh7m41a6"
+path="res://.godot/imported/Crunch_2.ogg-6f0d9c16faa8b1bd98827ba9fb7a5b8e.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Crunch_2.ogg"
+dest_files=["res://.godot/imported/Crunch_2.ogg-6f0d9c16faa8b1bd98827ba9fb7a5b8e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

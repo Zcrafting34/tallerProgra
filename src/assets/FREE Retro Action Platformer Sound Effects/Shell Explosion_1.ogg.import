@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://df3h042yk1vuj"
+path="res://.godot/imported/Shell Explosion_1.ogg-121b4a1c05cd4c6e62703b883aa54927.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/FREE Retro Action Platformer Sound Effects/Shell Explosion_1.ogg"
+dest_files=["res://.godot/imported/Shell Explosion_1.ogg-121b4a1c05cd4c6e62703b883aa54927.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
